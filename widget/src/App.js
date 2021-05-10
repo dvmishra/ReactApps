@@ -158,7 +158,7 @@ class Header extends React.PureComponent {
               {multiplier > 1 && (
                 <div className="multiplier">x{multiplier}</div>
               )}
-              {change !== 0 && (
+              {change > 0 && (
                 <div
                   ref={(ref) => (this.change = ref)}
                   className="change animated"
